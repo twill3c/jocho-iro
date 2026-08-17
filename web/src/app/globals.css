@@ -1,0 +1,74 @@
+/* jocho-iro — 八情の色見本帖(墨の台紙に 8 色) */
+:root {
+  color-scheme: dark;
+  --bg: #14130f;
+  --surface: #1c1a15;
+  --surface-2: #24211a;
+  --border: rgba(235, 229, 214, 0.13);
+  --fg: #ebe5d6;
+  --fg-2: #c6bfae;
+  --muted: #8d8672;
+  --gold: #d9b36a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  background: radial-gradient(120% 80% at 50% 0%, #1b1914, var(--bg) 65%);
+  color: var(--fg);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  min-height: 100dvh;
+}
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+.hall { max-width: 1080px; margin: 0 auto; padding: 28px 16px 64px; }
+.masthead { text-align: center; margin-bottom: 18px; }
+.eyebrow { color: var(--gold); font-size: 0.75rem; letter-spacing: 0.22em; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+.masthead h1 { font-size: 1.9rem; letter-spacing: 0.24em; text-indent: 0.24em; margin: 6px 0; }
+.lede { color: var(--fg-2); font-size: 0.9rem; max-width: 44em; margin: 0 auto; line-height: 1.9; }
+.palette-legend { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 12px; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; font-size: 0.78rem; }
+.palette-legend .sw { display: inline-flex; align-items: center; gap: 5px; color: var(--fg-2); }
+.palette-legend .dot { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.controls { display: grid; gap: 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-bottom: 18px; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+.controls .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.controls .label { color: var(--muted); font-size: 0.75rem; letter-spacing: 0.1em; margin-right: 4px; }
+select { background: var(--surface-2); color: var(--fg); border: 1px solid var(--border); border-radius: 6px; padding: 5px 8px; font-size: 0.82rem; }
+.count { color: var(--muted); font-size: 0.78rem; margin-left: auto; }
+.emochip { border: 1px solid var(--border); border-radius: 999px; padding: 3px 12px; font-size: 0.82rem; color: var(--fg-2); display: inline-flex; align-items: center; gap: 6px; }
+.emochip .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.emochip.on { border-color: var(--gold); color: var(--fg); background: rgba(217, 179, 106, 0.1); }
+.wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; transition: border-color 0.15s, transform 0.15s; }
+.card:hover { border-color: var(--gold); transform: translateY(-1px); }
+.card canvas { width: 100%; height: 34px; display: block; border-radius: 3px; }
+.card .t { margin-top: 7px; font-size: 0.88rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card .meta { display: flex; gap: 8px; color: var(--muted); font-size: 0.72rem; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; margin-top: 3px; align-items: center; }
+.card .dom { display: inline-flex; align-items: center; gap: 4px; }
+.card .dom .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.card .ent { color: var(--gold); font-variant-numeric: tabular-nums; }
+.loading { text-align: center; color: var(--muted); padding: 60px 0; }
+.footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 0.8rem; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+.footer a { color: var(--fg-2); border-bottom: 1px solid var(--border); }
+.footer a:hover { color: var(--gold); border-color: var(--gold); }
+.fsep { margin: 0 4px; opacity: 0.6; }
+/* 詳細 */
+.crumbs { margin-bottom: 14px; font-size: 0.85rem; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+.crumbs a:hover { color: var(--gold); }
+.work-head { text-align: center; margin-bottom: 14px; }
+.work-head h1 { font-size: 1.6rem; letter-spacing: 0.1em; }
+.work-author { color: var(--fg-2); margin-top: 2px; }
+.work-meta { color: var(--muted); font-size: 0.78rem; margin-top: 6px; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+.work-meta a { color: var(--fg-2); border-bottom: 1px solid var(--border); }
+.panels { display: grid; grid-template-columns: 300px 1fr; gap: 14px; margin-bottom: 14px; }
+@media (max-width: 760px) { .panels { grid-template-columns: 1fr; } }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+.panel h2 { font-size: 0.85rem; color: var(--muted); letter-spacing: 0.16em; text-align: center; margin-bottom: 6px; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; font-weight: 600; }
+.panel svg { width: 100%; height: auto; display: block; }
+.river-svg { cursor: crosshair; }
+.panel-hint { color: var(--muted); font-size: 0.7rem; text-align: center; margin-top: 4px; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+.reader { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; max-width: 760px; margin: 0 auto; }
+.line { display: block; width: 100%; text-align: left; font: inherit; line-height: 2.0; padding: 1px 8px; border-radius: 4px; border-left: 3px solid transparent; color: var(--fg); }
+.line:hover { border-left-color: var(--gold); }
+.line.sel { border-left-color: var(--gold); outline: 1px solid rgba(217, 179, 106, 0.5); }
+.line mark { background: none; font-weight: 700; padding: 0 1px; }
+.line mark.neg { text-decoration: line-through; text-decoration-thickness: 1px; opacity: 0.75; }
+.teihon { color: var(--muted); font-size: 0.72rem; text-align: center; margin-top: 14px; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+@media (prefers-reduced-motion: reduce) { .card { transition: none; } }
