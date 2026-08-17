@@ -1,3 +1,7 @@
 {"v": "1.2", "ts": "2026-08-17T21:57:56+09:00", "project": "jocho-iro", "loop_id": "loop_005", "event": "loop_start", "data": {"goal": "公開: デプロイ + アーティファクト + フッタ(F-09)+ app-menu 登録", "spec_refs": ["F-09", "N-01"], "scaffold_version": "1.8.0", "agent": "claude-code"}}
 {"v": "1.2", "ts": "2026-08-17T21:57:56+09:00", "project": "jocho-iro", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 1, "stage_name": "計画", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-17T21:57:56+09:00", "project": "jocho-iro", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 2, "stage_name": "文脈読込", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T22:01:19+09:00", "project": "jocho-iro", "loop_id": "loop_005", "event": "test_run", "data": {"command": "npx vitest run (T-120)", "passed": 13, "failed": 1}}
+{"v": "1.2", "ts": "2026-08-17T22:01:19+09:00", "project": "jocho-iro", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 3, "stage_name": "テスト先行", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T22:02:38+09:00", "project": "jocho-iro", "loop_id": "loop_005", "event": "test_run", "data": {"command": "node scripts/verify.mjs", "passed": 4, "failed": 0}}
+{"v": "1.2", "ts": "2026-08-17T22:02:38+09:00", "project": "jocho-iro", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 4, "stage_name": "実装", "result": "pass"}}

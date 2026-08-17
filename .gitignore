@@ -15,3 +15,6 @@ web/.loop/
 data/hits/
 data/eval_manifest.json
 data/profiles.json
+
+.vercel
+.env*
