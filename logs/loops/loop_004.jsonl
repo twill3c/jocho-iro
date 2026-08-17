@@ -7,3 +7,5 @@
 {"v": "1.2", "ts": "2026-08-17T21:57:38+09:00", "project": "jocho-iro", "loop_id": "loop_004", "event": "stage_end", "data": {"stage": 4, "stage_name": "実装", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-17T21:57:38+09:00", "project": "jocho-iro", "loop_id": "loop_004", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-17T21:57:39+09:00", "project": "jocho-iro", "loop_id": "loop_004", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T21:57:39+09:00", "project": "jocho-iro", "loop_id": "loop_004", "event": "commit", "data": {"kind": "feat", "sha": "563b6ea", "message": "feat: 詳細(レーダー+川)"}}
+{"v": "1.2", "ts": "2026-08-17T21:57:40+09:00", "project": "jocho-iro", "loop_id": "loop_004", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "詳細完成。verify PASS・実駆動 OK"}}
