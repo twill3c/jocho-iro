@@ -1,0 +1,17 @@
+.loop/
+data/bronze/
+data/index_cache/
+data/lines/
+node_modules/
+.next/
+out/
+.vercel
+.env.local
+__pycache__/
+*.pyc
+web/coverage/
+web/tsconfig.tsbuildinfo
+web/.loop/
+data/hits/
+data/eval_manifest.json
+data/profiles.json
